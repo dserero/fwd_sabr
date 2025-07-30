@@ -1,0 +1,20 @@
+[project]
+name = "fwdsabr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dserero", email = "daserboss@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=6.30.0",
+    "matplotlib>=3.10.3",
+    "pandas>=2.3.1",
+    "pysabr>=0.4.1",
+    "seaborn>=0.13.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
