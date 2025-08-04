@@ -3,14 +3,12 @@ name = "fwdsabr"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [
-    { name = "dserero", email = "daserboss@gmail.com" }
-]
-requires-python = ">=3.13"
+authors = [{ name = "dserero", email = "daserboss@gmail.com" }]
+requires-python = ">=3.11"
 dependencies = [
+    "datafetchingirta",
     "ipykernel>=6.30.0",
     "matplotlib>=3.10.3",
-    "pandas>=2.3.1",
     "pysabr>=0.4.1",
     "seaborn>=0.13.2",
 ]
@@ -18,3 +16,12 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+url = "https://dl.cloudsmith.io/14vkqZtEmg6ObfvY/brevanhoward/bhutils/python/simple/"
+
+[[tool.uv.index]]
+url = "https://dl.cloudsmith.io/b2YvTFkf79HV57ci/brevanhoward/map/python/simple/"
+
+[tool.uv.sources]
+datafetchingirta = { git = "https://github.com/David-Serero_brevan/datafetchingirta.git" }
